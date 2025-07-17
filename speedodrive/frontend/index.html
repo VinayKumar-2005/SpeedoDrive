@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeedoDrive</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="logo">
+            <h1><i class="fa-solid fa-car-side"></i> SpeedoDrive</h1>
+        </div>
+
+        <div class="item">
+        <a class="home-btn" href="#">Home</a>
+        <a href="#rent">Rent Car</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#about">About Us</a>
+        <a href="#blog">Blog</a>
+        <div class="btn">
+            <button class="login">Log in</button>
+            <button class="signup">Sign Up</button>
+        </div>
+        </div>
+    </nav>
+
+    <div class="home">
+        <div class="main-sec">
+        <div class="left">
+            <p class="txt1">Smart. Swift. <span>Secure</span> Rides</p>
+            <p class="txt2">Experience car rentals like never before with SpeedoDrive. Affordable, fast, and trusted by
+            thousands.</p>
+            <div class="btn">
+            <input class="book-now" type="button" value="Book Now" />
+            </div>
+        </div>
+        <div class="right">
+            <img src="/frontend/images/bmw.png" alt="Featured Car" />
+        </div>
+        </div>
+    </div>
+
+    <section class="search-section">
+        <div class="search-box">
+            <div class="search-field">
+                <label for="pickup">Pick Up Location</label>
+                <input id="pickup" type="text" placeholder="Enter pickup location" />
+            </div>
+
+            <div class="search-field">
+                <label for="drop">Drop Location</label>
+                <input id="drop" type="text" placeholder="Enter drop location" />
+            </div>
+
+            <div class="search-field">
+                <label for="pick-date">Pick Up Date</label>
+                <input type="date" id="pick-date" value="2024-02-14" />
+            </div>
+
+            <div class="search-field">
+                <label for="return-date">Return Date</label>
+                <input type="date" id="return-date" value="2024-02-16" />
+            </div>
+
+            <div class="search-field">
+                <button class="search-btn">🔍 Search Car</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="inventory-section" id="inventory">
+        <h2>Latest <span style="color:#4a6bdb">Inventory</span></h2>
+        <p>Explore our latest fleet available for instant booking.</p>
+
+        <div class="car-container">
+        <div class="car-card">
+            <img src="/frontend/images/lamborghini.jpg" alt="Lamborghini Huracán" />
+            <div class="car-info">
+            <h3>Lamborghini Huracán</h3>
+            <p>₹1,50,000/day • Petrol • 2 Seats • Auto</p>
+            <span class="tag">Luxury</span>
+            <button class="book-btn">🚗 Book Now</button>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="/frontend/images/verna.jpg" alt="Hyundai Verna" />
+            <div class="car-info">
+            <h3>Hyundai Verna</h3>
+            <p>₹14,500/day • Petrol • 5 Seats • Manual</p>
+            <span class="tag">Economy</span>
+            <button class="book-btn">🚗 Book Now</button>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="/frontend/images/ford.jpg" alt="Ford Expedition" />
+            <div class="car-info">
+            <h3>Ford Expedition</h3>
+            <p>₹25,000/day • Diesel • 7 Seats • Auto</p>
+            <span class="tag">SUV</span>
+            <button class="book-btn">🚗 Book Now</button>
+            </div>
+        </div>
+        </div>
+
+        <div class="car-container">
+        <div class="car-card">
+            <img src="/frontend/images/tesla.jpg" alt="Tesla Model 3" />
+            <div class="car-info">
+            <h3>Tesla Model 3</h3>
+            <p>₹1,20,000/day • Electric • 5 Seats • Auto</p>
+            <span class="tag">Electric</span>
+            <button class="book-btn">🚗 Book Now</button>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="/frontend/images/ciaz.jpg" alt="Maruti Ciaz" />
+            <div class="car-info">
+            <h3>Maruti Ciaz</h3>
+            <p>₹8,500/day • Petrol • 5 Seats • Manual</p>
+            <span class="tag">Economy</span>
+            <button class="book-btn">🚗 Book Now</button>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="/frontend/images/fortuner.jpg" alt="Toyota Fortuner" />
+            <div class="car-info">
+            <h3>Toyota Fortuner</h3>
+            <p>₹20,000/day • Diesel • 7 Seats • Manual</p>
+            <span class="tag">SUV</span>
+            <button class="book-btn">🚗 Book Now</button>
+            </div>
+        </div>
+        </div>
+
+        <div class="view-all-container">
+        <a href="all-cars.html" class="view-all-btn">🔍 View All Cars</a>
+        </div>
+    </section>
+
+    <section class="support-sec">
+        <div class="txt">
+        <p class="txt1">Why <span>Choose</span> Us</p>
+        <p class="subtxt">Here’s why thousands trust SpeedoDrive for their car rental needs.</p>
+        </div>
+
+        <div class="support-grid">
+        <div class="support-card">
+            <i class="fa-solid fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>We’re here for you anytime, anywhere. Instant help at your fingertips.</p>
+        </div>
+
+        <div class="support-card">
+            <i class="fa-solid fa-tags"></i>
+            <h3>Best Price Guarantee</h3>
+            <p>Affordable rentals with no hidden charges or surprises.</p>
+        </div>
+
+        <div class="support-card">
+            <i class="fa-solid fa-id-badge"></i>
+            <h3>Verified Licenses</h3>
+            <p>All cars and drivers are fully certified and background checked.</p>
+        </div>
+
+        <div class="support-card">
+            <i class="fa-solid fa-ban"></i>
+            <h3>Free Cancellation</h3>
+            <p>Plans changed? No worries — cancel your ride anytime for free.</p>
+        </div>
+        </div>
+    </section>
+
+    <section class="achie-sec">
+        <div class="txt">
+        <p class="txt1">Our <span>Achievements</span></p>
+        <p class="subtxt">Driving forward with success — trusted, loved, and expanding every day.</p>
+        </div>
+
+        <div class="main-sec">
+        <div class="box">
+            <p class="counter" data-count="4000">0</p>
+            <p>Active Members</p>
+        </div>
+        <div class="box">
+            <p class="counter" data-count="3000">0</p>
+            <p>Car Colors</p>
+        </div>
+        <div class="box">
+            <p class="counter" data-count="6000">0</p>
+            <p>Car Models</p>
+        </div>
+        <div class="box">
+            <p class="counter" data-count="10000">0</p>
+            <p>Positive Ratings</p>
+        </div>
+        </div>
+    </section>
+
+    <section class="start-sec">
+        <div class="main-sec">
+        <div class="left">
+            <p class="txt1">Ready to <span>Get Started</span>?</p>
+            <p class="txt2">Begin your journey with SpeedoDrive today. Fast bookings, trusted service, and premium car
+            rental experience — all in one place.</p>
+            <div class="btn">
+            <a href="#contact" class="contact-btn">📞 Contact Us</a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="/frontend/images/verna.png" alt="Verna Car Image" />
+        </div>
+        </div>
+    </section>
+
+    <div class="auth-modal" id="authModal">
+        <div class="auth-box">
+            <span class="close-btn" id="closeModal">&times;</span>
+
+            <div class="tabs">
+            <button class="tab-btn active" id="loginTab">Login</button>
+            <button class="tab-btn" id="signupTab">Sign Up</button>
+            </div>
+
+            <form class="form" id="loginForm">
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" required />
+            <label>Password</label>
+            <div class="password-box">
+                <input type="password" placeholder="Enter password" id="loginPassword" required />
+                <i class="fa fa-eye toggle-password" toggle="#loginPassword"></i>
+            </div>
+            <button type="submit">Login</button>
+            </form>
+
+            <form class="form hidden" id="signupForm">
+            <label>Full Name</label>
+            <input type="text" placeholder="Your name" required />
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" required />
+            <label>Password</label>
+            <div class="password-box">
+                <input type="password" placeholder="Create password" id="signupPassword" required />
+                <i class="fa fa-eye toggle-password" toggle="#signupPassword"></i>
+            </div>
+            <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="foot-sec">
+        <div class="logo">
+        <h1>SpeedoDrive</h1>
+        </div>
+
+        <div class="copy">
+        <p class="tagline">Smart. Swift. Secure Rides – Powered by <strong>VINAY KUMAR</strong></p>
+        </div>
+
+        <div class="item">
+        <a href="/">Website Terms</a>
+        <a href="/">Contact Us</a>
+        <a href="/">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
